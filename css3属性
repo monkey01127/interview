@@ -99,5 +99,17 @@ column-rule
 CSS3 调整尺寸
   Resize
   box-sizing
- 
+媒体查询
+ 窗口大于480px
+ @media screen and (min-width: 480px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+@media screen and (max-width: 699px) and (min-width: 520px) {
+    ul li a {
+        padding-left: 30px;
+        background: url(email-icon.png) left center no-repeat;
+    }
+}
   
