@@ -1,0 +1,17 @@
+状态码
+  
+  简介地址：http://www.runoob.com/http/http-tutorial.html
+
+  http: 超文本传输协议
+  
+  200 OK 请求成功
+  
+  400 Bad Request 客户端请求错误
+  
+  403 Forbidden 禁止访问
+  
+  404 Not Found 未找到（请求的资源（网页等）不存在）
+  
+  500 Internal Server Error 内部服务器错误
+  
+  502 Bad Gateway 网关错误
