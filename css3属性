@@ -1,0 +1,103 @@
+html5, css3的新特性
+
+html5
+
+css3
+ transform: 
+ 边框：
+  * box-shadow
+  * border-radius
+  * border-image
+ 背景：
+  * background-image: url(img_flwr.gif), url(paper.gif); 
+  * background-position: right bottom, left top; 
+  * background-repeat: no-repeat, repeat; 
+  * background-size:: 100% 100%
+  * background-origin: content-box/border-box/padding-box
+  * background-clip: content-box/border-box/padding-box
+  * background: linear-gradient(left, red , blue)
+阴影：
+  text-shadow: 5px 5px 5px #FF0000
+  box-shadow: 5px 5px 5px #FF0000
+  text-overflow: ellipsis/clip
+  word-wrap:break-word
+  word-break: keep-all
+字体:
+  @font-face
+  {
+      font-family: myFirstFont;
+      src: url(sansation_light.woff);
+  }
+2D转换：
+  transform: translate(50px,100px)
+  transform: rotate(30deg)
+  transform: scale(2,3)
+  transform: skew()
+  transform: matrix()
+3D转换
+过渡
+```
+transition
+  demo1:
+    div {
+        width: 100px;
+        height: 100px;
+        background: red;
+        -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* For Safari 3.1 to 6.0 */
+        transition: width 2s, height 2s, transform 2s;
+    }
+
+    div:hover {
+        width: 200px;
+        height: 200px;
+        -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+        transform: rotate(180deg);
+     }
+  demo2:
+    div{
+      width: 200px;
+      height: 200px;
+      background-color: #f00;
+      transition: all 2s;
+  }
+
+  div:hover{
+    background-color: #00f;
+    transform: translateX(500px) translateY(500px) scale(0.8) rotate(360deg);
+  }
+  动画
+  animation
+  {
+    width:100px;
+    height:100px;
+    background:red;
+    animation:myfirst 5s;
+    -webkit-animation:myfirst 5s; /* Safari and Chrome */
+  }
+
+  @keyframes myfirst
+  {
+    0%   {background:red; left:0px; top:0px;}
+    25%  {background:yellow; left:200px; top:0px;}
+    50%  {background:blue; left:200px; top:200px;}
+    75%  {background:green; left:0px; top:200px;}
+    100% {background:red; left:0px; top:0px;}
+  }
+
+  @-webkit-keyframes myfirst /* Safari and Chrome */
+  {
+    0%   {background:red; left:0px; top:0px;}
+    25%  {background:yellow; left:200px; top:0px;}
+    50%  {background:blue; left:200px; top:200px;}
+    75%  {background:green; left:0px; top:200px;}
+    100% {background:red; left:0px; top:0px;}
+  }
+多列
+column-count
+column-gap
+column-rule
+CSS3 调整尺寸
+  Resize
+  box-sizing
+ 
+  
