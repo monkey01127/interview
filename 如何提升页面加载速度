@@ -1,5 +1,9 @@
 Web前端性能优化——如何提高页面加载速度
 
+ 0、按需加载、预加载
+ 
+ <link rel="prefetch" href="http://www.example.com/">
+
  一、减少HTTP请求
   CSS Sprites、
   字体图标、
